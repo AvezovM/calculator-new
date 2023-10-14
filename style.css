@@ -1,0 +1,137 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.calculator {
+	padding: 20px 0 50px 0;
+	background-color: #405372;
+	color: #fff;
+}
+.calculator h1{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.calculator_cols {
+	display: flex;
+}
+.calculator_col{
+	width: 45%;
+}
+.styled-select {
+	display: inline-block;
+	position: relative;
+}
+.styled-select select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding: 12px;
+	width: 100%;
+	font-size: 16px;
+	border: 2px solid #9BADCA;
+	border-radius: 8px;
+	background-color: transparent;
+	cursor: pointer;
+	color: #fff;
+}
+.styled-select select option{
+	background-color: #405372;
+}
+.styled-select::after {
+	content: '\25BC';
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	font-size: 16px;
+	color: #9BADCA;
+	pointer-events: none;
+}
+.styled-select select:focus {
+	outline: none;
+	border-color: #9BADCA;
+}
+
+.calculator_col label{
+	margin: 0px 10px 0px 5px;
+}
+.radio-container {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+}
+.checkmark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border:3px solid #9BADCA;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.radio-container input:checked + .checkmark {
+	background-color: transparent;
+}
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+.radio-container input:checked + .checkmark:after {
+	display: block;
+}
+.radio-container .checkmark:after {
+	top: 3px;
+	left: 3.4px;
+	border-radius: 50%;
+	border: 2px solid #9BADCA;
+	width: 10px;
+	height: 10px;
+	background: #9BADCA;
+}
+.calculator_col input[type="text"]{
+	border:2px solid #9BADCA;
+	background-color: transparent;
+	width: 60%;
+	padding: 10px;
+	outline: none;
+	color: #fff;
+	border-radius: 10px;
+
+}
+.white_col {
+	padding: 20px 20px 40px 20px;
+	border-radius: 10px;
+	background-color: #fff;
+	color: #000;
+	height: 100%;
+}
+.white_col h3{
+	font-weight: lighter;
+	margin-bottom: 30px;
+}
+.white_col h4{
+	font-weight: lighter;
+	font-size: 18px;
+	margin-bottom: 35px;
+}
+.white_col button{
+	width: 100%;
+	padding: 12px;
+	background-color: #254985;
+	color: #fff;
+	border:none;
+	border-radius: 5px;
+	font-size: 17px;
+}
